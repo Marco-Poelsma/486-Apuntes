@@ -29,5 +29,8 @@
     <p>
         <?php echo $exploded[4]; ?>
     </p>
+
+
+    <p><a href="../../../../index.php">Volver a inicio</a></p>
 </body>
 </html>
