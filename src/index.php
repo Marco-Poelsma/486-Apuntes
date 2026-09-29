@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@
     <h3>Sesión 2</h3>
     <p>
         <ul>
-            <li><a href="">Ejercicio 02</li>
+            <li><a href="./S02/Ex/Ex2/view/index.php">Ejercicio 02</li>
             <li><a href="">Ejercicio 03</li>
             <li><a href="">Ejercicio 04</li>
             <li><a href="">Ejercicio 05</li>
