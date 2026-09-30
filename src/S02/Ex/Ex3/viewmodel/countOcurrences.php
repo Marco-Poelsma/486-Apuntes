@@ -5,22 +5,19 @@ namespace ex3;
 function countOcurrences(string $query, int $column): int
 {
     require_once "../model/City.php";
-    require_once "../model/cities.php";
-    global $tokyo;
-    global $mexicoCity;
-    global $nyc;
-    global $mumbai;
-    global $seoul;
-    global $shanghai;
-    global $chicago;
-    global $buenosAires;
-    global $cairo;
-    global $london;
+
+    $tokyo = new City("Tokyo", "Japan", "Asia");
+    $mexicoCity = new City("Mexico City", "Mexico", "North America");
+    $nyc = new City("New York City", "USA", "North America");
+    $mumbai = new City("Mumbai", "India", "Asia");
+    $seoul = new City("Seoul", "Korea", "Asia");
+    $shanghai = new City("Shanghai", "China", "Asia");
+    $chicago = new City("Chicago", "USA", "North America");
+    $buenosAires = new City("Buenos Aires", "Argentina", "South America");
+    $cairo = new City("Cairo", "Egypt", "Africa");
+    $london = new City("London", "UK", "Europe");
 
     $cities = array($tokyo, $mexicoCity, $nyc, $mumbai, $seoul, $shanghai, $chicago, $buenosAires, $cairo, $london);
-
-    var_dump($tokyo);
-    var_dump($cities);
 
     $count = 0;
 
