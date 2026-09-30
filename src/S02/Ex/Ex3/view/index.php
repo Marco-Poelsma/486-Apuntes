@@ -1,3 +1,8 @@
+<?php
+
+namespace ex3;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,7 @@
 </head>
 <body>
     <?php
+
     require_once "../viewmodel/countOcurrences.php";
     $usa = countOcurrences("USA", 1);
     $northAmerica = countOcurrences("North America", 2);
