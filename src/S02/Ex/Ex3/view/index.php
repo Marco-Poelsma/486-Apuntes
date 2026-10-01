@@ -8,6 +8,8 @@ namespace ex3;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="../../../../styles/reset.css" />
+    <link rel="stylesheet" src="../../../../styles/styles.css" />
     <title>Ejercicio 3</title>
 </head>
 <body>
@@ -33,6 +35,6 @@ namespace ex3;
         </li>
     </ul>
 
-    <p><a href="../../../../index.php">Volver a inicio</a></p>
+    <p><a href="../../../../index.html">Volver a inicio</a></p>
 </body>
 </html>

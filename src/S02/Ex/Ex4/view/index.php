@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="../../../../styles/reset.css" />
+    <link rel="stylesheet" src="../../../../styles/styles.css" />
     <title>Ejercicio 4</title>
 </head>
 <body>
@@ -24,6 +26,6 @@
 
     ?>
 
-    <p><a href="../../../../index.php">Volver a inicio</a></p>
+    <p><a href="../../../../index.html">Volver a inicio</a></p>
 </body>
 </html>

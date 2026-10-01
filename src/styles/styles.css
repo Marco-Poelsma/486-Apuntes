@@ -1,0 +1,436 @@
+/*
+    FONT CUSTOM (MAPLE MONO)
+    Faré servir aquesta font principalment per icones de
+    Nerd Fonts, per títols de seccions i per missatges
+    d'error.
+*/
+@font-face {
+    font-family: MapleMono;
+    src: url(/assets/fonts/MapleMono-NF-Regular.ttf);
+}
+
+:root {
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    --base-colour: #27232b;
+    --bg-colour: #141216;
+    --selected-bg-colour: #d8cab8;
+    --text-colour: #d8cab8;
+    --selected-colour: #141216;
+    --link-colour: #4b2697;
+    --accent_bg_colour: #ac82e9;
+
+}
+
+h1, h2, .data-pills {
+    font-family: MapleMono, monospace;
+    color: var(--text-colour);
+}
+
+a {
+    color: var(--link-colour);
+}
+
+.content-card {
+    background-color: var(--base-colour);
+    color: var(--text-colour);
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--accent_bg_colour);
+    width: 95vw;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+select {
+    background-color: var(--base-colour);
+    color: var(--text-colour);
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--accent_bg_colour);
+}
+
+option {
+    background-color: var(--accent_bg_colour);
+    color: var(--link-colour)
+}
+
+body {
+    background-color: var(--bg-colour);
+    color: var(--text-colour);
+    align-self: center;
+}
+
+.data-pill {
+    background-color: var(--link-colour);
+    color: var(--text-colour);
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 0 1em;
+    border-radius: 1em;
+    gap: 1em;
+    margin: 0.5em;
+    margin-left: 0;
+    flex-wrap: nowrap;
+}
+
+.data-pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav > span {
+    padding: 0.5em 2em;
+    width: 33vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+nav > span:hover:not([data-active='true']) {
+    background-color: var(--accent_bg_colour);
+    color: var(--base-colour);
+    transition: 0.25s;
+}
+
+nav > [data-active='true'] {
+    border-bottom: 2px solid var(--accent_bg_colour);
+    cursor:auto;
+    pointer-events: none;
+}
+
+#currency-converter-form {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 1.5em;
+}
+
+.currency-input {
+    background-color: var(--bg-colour);
+    border-radius: 1em;
+    border-color: var(--accent_bg_colour);
+    border-style: solid;
+    color: var(--text-colour);
+    padding-left: 0.5em;
+    min-width: 2em;
+}
+
+.currency-input:focus {
+    background-color: var(--selected-colour);
+    border-color: var(--selected-bg-colour);
+}
+
+.currency-select {
+    min-width: 2em;
+}
+
+option {
+    overflow: hidden;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  margin-top: 0.75em;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.weather-big-icon {
+  font-family: MapleMono, monospace;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding-right: 1em;
+  color: var(--accent_bg_colour);
+}
+
+.weather-temp-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.weather-temp {
+  font-family: MapleMono, monospace;
+  font-size: 2.75rem;
+  line-height: 1;
+  color: var(--text-colour);
+  letter-spacing: -0.03em;
+}
+
+.weather-unit {
+  font-size: 1.5rem;
+  color: var(--accent_bg_colour);
+}
+
+.weather-condition {
+  font-family: MapleMono, monospace;
+  font-size: 0.8rem;
+  color: var(--accent_bg_colour);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.1em;
+}
+
+.weather-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.weather-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  background-color: var(--bg-colour);
+  border: 1px solid var(--accent_bg_colour);
+  border-radius: 0.75em;
+  padding: 0.5em 1em;
+  flex: 1;
+  min-width: 120px;
+}
+
+.weather-stat-icon {
+  font-family: MapleMono, monospace;
+  font-size: 1.4rem;
+  color: var(--accent_bg_colour);
+  line-height: 1;
+  padding-right: 1em;
+}
+
+.weather-stat-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.weather-stat-label {
+  font-family: MapleMono, monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent_bg_colour);
+}
+
+.weather-stat-value {
+  font-family: MapleMono, monospace;
+  font-size: 0.95rem;
+  color: var(--text-colour);
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+#recommendation-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--base-colour);
+    border-top: 1px solid var(--accent_bg_colour);
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4);
+    padding-bottom: 2em;
+}
+
+#rec-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.85em;
+    padding: 0.7em 1.25em;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 62px;
+}
+
+#rec-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
+    color: var(--accent_bg_colour);
+    line-height: 1;
+    transition: opacity 0.4s ease;
+}
+
+#rec-body {
+    flex: 1;
+    min-width: 0;
+}
+
+#rec-label {
+    display: block;
+    font-family: MapleMono, monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent_bg_colour);
+    margin-bottom: 0.15em;
+}
+
+#rec-text {
+    font-size: 0.875rem;
+    color: var(--text-colour);
+    line-height: 1.4;
+    margin: 0;
+}
+
+#rec-text strong {
+    color: var(--accent_bg_colour);
+    font-weight: 600;
+}
+
+#rec-dots {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+    align-items: center;
+    padding-left: 0.5em;
+}
+
+.rec-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--link-colour);
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.rec-dot--active {
+    background-color: var(--accent_bg_colour);
+    transform: scale(1.25);
+}
+
+/*
+ * MARK: Fade transitions
+ */
+@keyframes recFadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to   { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes recFadeOut {
+    from { opacity: 1; transform: translateY(0);    }
+    to   { opacity: 0; transform: translateY(-5px); }
+}
+
+.rec-fade-in {
+    animation: recFadeIn 0.45s ease forwards;
+}
+
+.rec-fade-out {
+    animation: recFadeOut 0.38s ease forwards;
+}
+
+header > h1 {
+    padding: 0.25em;
+}
+
+#destination-selection-header {
+    padding-left: 1em;
+}
+
+#destination-dropdown {
+    padding: 0.5em;
+    width: 100vw;
+    margin: 0.5em 0;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav main";
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 4rem 1fr;
+        min-height: 100vh;
+        padding-bottom: 0;
+        background-color: var(--bg-colour);
+    }
+
+    header {
+        grid-area: header;
+        border-bottom: 1px solid var(--accent_bg_colour);
+    }
+
+    nav {
+        grid-area: nav;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid var(--accent_bg_colour);
+        padding: auto 0;
+        align-items: center;
+        height: 100%;
+        background-color: var(--base-colour);
+        z-index: -1;
+        width: 350px;
+        height: 100vh;
+        padding-bottom: 5em;
+    }
+
+    nav > span {
+        width: 100%;
+        text-align: left;
+        padding: 1em 2em;
+    }
+
+    nav > [data-active='true'] {
+        border-bottom: none;
+        border-right: 4px solid var(--accent_bg_colour);
+        background-color: var(--bg-colour);
+    }
+
+    main {
+        grid-area: main;
+        padding: 2em;
+    }
+
+    .content-card {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    #destination-select {
+        margin-bottom: 2em;
+    }
+
+    #destination-selection-header {
+        padding-left: 0;
+    }
+
+    #destination-dropdown {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    #recommendation-banner {
+        left: 350px;
+        padding-bottom: 1em;
+        box-shadow: none;
+    }
+
+    #rec-inner {
+        margin: 0;
+        max-width: none;
+    }
+}
