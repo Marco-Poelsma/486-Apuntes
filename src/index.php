@@ -15,7 +15,7 @@
             <li><a href="./S02/Ex/Ex2/view/index.php">Ejercicio 02</li>
             <li><a href="./S02/Ex/Ex3/view/index.php">Ejercicio 03</li>
             <li><a href="./S02/Ex/Ex4/view/index.php">Ejercicio 04</li>
-            <li><a href="">Ejercicio 05</li>
+            <li><a href="./S02/Ex/Ex5/view/index.php">Ejercicio 05</li>
             <li><a href="">Ejercicio 06</li>
             <li><a href="">Ejercicio 07</li>
         </ul>
