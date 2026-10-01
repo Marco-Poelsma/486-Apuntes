@@ -14,7 +14,7 @@
 
     ?>
     <h1>Ejercicio 5</h1>
-    <h2>Array Inicial:</h2>
+    <h2>Array Inicial</h2>
     <?php var_dump($values); ?>
 
     <h2>Array Final</h2>
