@@ -40,5 +40,6 @@ global $dataErr;
             <li><?php echo $dataNaixement; ?></li>
         </ul>
     </p>
+    <p><a href="../../../../index.html">Volver a inicio</a></p>
 </body>
 </html>
