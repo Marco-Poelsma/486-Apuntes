@@ -1,31 +1,27 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
+$servername = "db";
+$username = "";
 $password = "";
-$dbname = "copy_world";
+$dbname = "amazon";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$user = "' OR id = 1# '";
+$pass = "";
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$conn = mysqli_connect("db", "root", "rootpassword", "amazon");
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM city";
-// Execute the SQL query
+$sql = "SELECT * FROM usuarios WHERE username = '" . $user . "' AND password = '" . $pass . "';";
+
 $result = $conn->query($sql);
 
-// Process the result set
 if ($result->num_rows > 0) {
-// Output data of each row
-    while ($row = $result->fetch_assoc()) {
-        echo $row["ID"] . ". " . $row["Name"] . " (" . $row["CountryCode"] . "):<br>";
-        echo "<tab>District: " . $row["District"] . " | Population: " . $row["Population"] . "<br>";
-    }
+    echo "Login successful!";
 } else {
-    echo "0 results";
+    echo "Credenciales incorrectas.";
 }
 
 $conn->close();
